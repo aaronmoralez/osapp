@@ -1,0 +1,34 @@
+<div data-role="page" id="osclasgap_page_user_register">
+  <div data-role="header">
+  	<a href="dashboard.html" data-icon="home" class="ui-btn-left">Inicio</a>
+    <h1>Registro</h1>
+    <a href="javascript:history.back(1)" data-role='button' class="ui-btn-right" data-icon="back">Atrás</a>
+  </div><!-- /header -->
+  <div data-role="content" class='content'>
+  	<div id='osclasgap_page_user_register_messages' class='messages'></div>
+    <div>
+      <label for="name">Usuario *</label>
+      <input type="text" id="name" />
+     <!-- <p>Spaces are allowed; punctuation is not allowed except for periods, hyphens, apostrophes, and underscores.</p>-->
+    </div>
+    <div>
+      <label for="mail">Correo *</label>
+      <input type="text" id="mail" />
+     <!-- <p>A valid e-mail address. All e-mails from the system will be sent to this address. The e-mail address is not made public and will only be used if you wish to receive a new password or wish to receive certain news or notifications by e-mail.</p>-->
+    </div>
+    <fieldset>
+        <div>
+            <label for="s_password">Contraseña</label>
+            <input type="password" id="s_password" name="s_password"/>
+        </div>
+        <div>
+            <label for="s_password2">Confirmar contraseña</label>
+            <input type="password" id="s_password2" name="s_password2"/>
+            <!--<p>Provide a password for the new account in both fields.</p>-->
+        </div>
+    </fieldset>
+    <fieldset>
+      <div><button type="button" data-theme="b" id="osclasgap_user_register_submit">Crear una nueva cuenta</button></div>
+    </fieldset>
+  </div><!-- /content -->
+</div><!-- /page -->

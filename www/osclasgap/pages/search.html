@@ -1,0 +1,71 @@
+<div data-role="page" id="osclasgap_page_search">
+  	<div data-role="header">
+  		<a href="dashboard.html" data-icon="home" class="ui-btn-left">Inicio</a>
+    	<h1>Búsqueda avanzada</h1>
+    	<a href="javascript:history.back(1)" data-role='button' class="ui-btn-right" data-icon="back" id="back-search">Atrás</a>
+  	</div><!-- /header -->
+  	
+  	<div data-role="content" class='content'>
+            <form action="#" method="post">
+                <div data-role="fieldcontain">
+                    <label for="text-search">Contiene</label>
+                    <input type="search" name="text-search" id="text-search" value="" />
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="catId-search">Categoría</label>
+                    <select name="catId-search" id="catId-search" data-mini="true" data-native-menu="false">
+                        <option value="-1">Seleccione</option>
+                    </select> 
+                </div>
+                <div data-role="fieldcontain">
+                     <label for="countryId-search">País</label>
+                     <select name="countryId-search" id="countryId-search" data-mini="true" data-native-menu="false">
+                        <option value="-1">Seleccione</option>   
+                     </select>
+                </div>
+                <div data-role="fieldcontain">
+                     <label for="regionId-search">Región</label>
+                     <select name="regionId-search" id="regionId-search" data-mini="true" data-native-menu="false">
+                        <option value="-1">Seleccione</option>   
+                     </select>
+                </div>
+                <div data-role="fieldcontain">
+                     <label for="cityId-search">Ciudad</label>
+                     <select name="cityId-search" id="cityId-search" data-mini="true" data-native-menu="false">
+                        <option value="-1">Seleccione</option>   
+                     </select>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                            <legend>Precio</legend>
+                          
+                            <label for="precio-desde">Desde</label>
+                            <input type="range" name="precio-desde" id="precio-desde" value="0" min="0" max="1000000" />
+               
+                            <label for="precio-hasta">Hasta</label>
+                            <input type="range" name="precio-hasta" id="precio-hasta" value="0" min="0" max="1000000" />                     
+                                  
+                    </fieldset>                     
+                </div>
+                 <div data-role="fieldcontain">
+                     <label for="images">Anuncios con imágenes</label>
+                     <input type="checkbox" name="images" id="images" class="custom" />
+                </div>
+                <div class="ui-body ui-body-b">
+                    <fieldset class="ui-grid-a">
+                        <div class="ui-block-a"><a href="#" data-role="button" data-theme="a" data-mini="true" id="osclasgap_page_search_submit">Buscar</a></div>
+                        <div class="ui-block-b"><a href="javascript:history.back(1)" data-role="button" data-theme="d" data-mini="true" class="ui-btn-right" style="width: 90%;">Cancelar</a></div>
+                    </fieldset>
+		</div>
+            </form>
+            
+            <ul data-role="listview" data-theme="a" data-inset="true" id="osclasgap_page_content_list"></ul>                   
+	  	<a href="#" data-role='button' id='more_items_search' style='display: none;'>Más Anuncios</a>
+                <div  id="bar-button-search"></div>
+        </div><!-- /content -->
+   <div data-role="footer" class="ui-bar" data-position="fixed">
+        <a href="#" data-role="button" data-icon="arrow-u" id="up-button-search" >Subir</a>
+        <a href="#" data-role="button" data-icon="arrow-d" id="down-button-search">Bajar</a>	
+        <a href="node_edit.html" class="add_item" data-role="button" data-icon="plus" style="display: none;" id="osclasgap_page_content_button_add_footer">Adicionar</a>	
+  </div>
+</div><!-- /page -->

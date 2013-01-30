@@ -1,0 +1,40 @@
+<div data-role="page" id="osclasgap_page_dashboard">    
+  	<div style="/*padding-bottom: 32px;*/">
+            <!--<div style="float: left;margin:10px 0 0 10px ;">Tus propiedades</div>-->
+            <div>&nbsp;<img src="#" id="logo" style="width: 120px;height: 50px;/*right:2px;position: absolute;*/"/></div>
+  	</div>
+  	<!--<div data-role="header" data-theme="b">
+    	  <h1></h1>
+  	</div> /header -->
+  	<div data-role="header" data-theme="c" id="osclasgap_page_dashboard_header_user">
+    	<h2></h2>
+  	</div><!-- /header -->
+  	<div data-role="navbar" id="osclasgap_page_dashboard_navbar_anonymous">
+           	<ul>
+                        <li><a href="new_item_anounimus.html" data-role="button" class="add_item" id="osclasgap_button_anounimous_new_item" data-icon="plus">Nuevo Anuncio</a></li>
+			<li><a href="user_login.html" data-role="button" id="osclasgap_button_user_login" data-icon="arrow-r" data-iconpos="right">Entrar</a></li>
+			<li><a href="user_register.html" data-role="button" id="osclasgap_button_user_register" data-icon="user-md">Crear usuario</a></li>
+		</ul>
+	</div><!-- /navbar -->
+	<div data-role="navbar" id="osclasgap_page_dashboard_navbar_authenticated">
+		<ul>
+			<li><a href="node_edit.html" data-role="button" class="add_item" id="osclasgap_button_user_account" data-icon="plus">Nuevo Anuncio</a></li>
+			<li><a href="user.html" data-role="button" id="osclasgap_button_user_account" data-icon="user-md">Mi Perfil</a></li>
+			<li><a href="#" data-role="button" id="osclasgap_button_user_logout" data-icon="off">Salir</a></li>
+		</ul>
+	</div><!-- /navbar -->
+	<div data-role="content">
+                <fieldset data-role="controlgroup" data-type="horizontal" > 
+                    <ul data-role="listview" data-theme="a" data-inset="false" id="osclasgap_page_premium_list"></ul>                   
+                </fieldset>
+                <p id="osclasgap_home_content"></p>
+		<p><a href="content.html" data-role="button" id="osclasgap_button_content" data-icon="list-alt">Anuncios</a></p>
+                <p id="osclasgap_home_search"></p>
+		<p><a href="search.html" data-role="button" id="osclasgap_button_search" data-icon="search">Búsqueda avanzada</a></p>
+                <p id="osclasgap_home_contact"></p>
+		<p><a href="contact.html" data-role="button" id="osclasgap_button_contact" data-icon="user-md">Contáctenos</a></p>
+	  	<!--<hr />
+	  	<p><a href="configuration.html" data-role="button">DrupalGap Configuration</a></p>-->
+	</div><!-- /content -->
+        
+</div><!-- /page -->

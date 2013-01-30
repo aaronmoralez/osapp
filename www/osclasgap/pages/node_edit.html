@@ -1,0 +1,111 @@
+<div data-role="page" id="osclasgap_page_node_edit">
+  <div data-role="header">
+    <a href="dashboard.html" data-icon="home" class="ui-btn-left">Inicio</a>
+    <h1>Crear Anuncio</h1>
+    <a href="javascript:history.back(1)" data-role='button' class="ui-btn-right" data-icon="back">Atrás</a>
+  </div><!-- /header -->
+  <div data-role="content" class='content'>
+    <div class="content-primary">
+                   
+		<form action="#" method="post">
+                    
+                    <div data-role="controlgroup" data-type="horizontal" data-mini="true">
+                        <a href="#" id="datos-generales" data-role="button" class="select_tab">Generales</a>
+                        <a href="#" id="datos-ubicacion" data-role="button">Ubicación</a> 
+                        <a href="#" id="datos-especificos" data-role="button" style="display: none;">Específicos</a>                        
+                    </div>
+                    
+                   <div id="osclasgap_page_content_add_list">
+                    <div data-role="fieldcontain">
+                        <label for="title">Título:</label>
+                        <input type="text" name="title" id="title" value="" data-mini="true" />
+                    </div>
+
+                    <div data-role="fieldcontain">
+                        <label for="description">Descripción:</label>
+                        <textarea cols="40" rows="8" name="description" id="description" data-mini="true"></textarea>
+                    </div>
+                                        
+                    <div id="categoties-list" data-role="fieldcontain">
+                           <label for="catId">Categoría</label>
+                           <select name="catId" id="catId" data-mini="true" data-native-menu="false">
+                               <option value="-1">Seleccione</option>
+                           </select>
+		    </div>   
+                       
+                    <div data-role="fieldcontain">
+                        <label class="ui-input-text" for="precio">Precio:</label>
+                            <input type="text" name="price" id="price" value="" data-mini="true"/>
+		    </div>
+                    
+                    <div data-role="fieldcontain">
+                        <label for="currency">Tipo de moneda</label>
+                        <select name="currency" id="currency" data-mini="true" data-native-menu="false" style="width: 20%">
+                                
+                        </select>    
+		    </div>
+                    <fieldset>
+                        <legend>Nuevas im&aacute;genes</legend>
+                        <div id="imagenes_selectors_set">
+                            <div class="imagenes_select">
+                                <img src="#" id="imgAdd1" style="width: 100px;height: 70px;"/>
+                                <input type="button" id="btnAdd1" data-mini="true" class="image_select" data-inline="true" value="Seleccionar" data-icon="plus" data-theme="b" />
+                                <input type="button" id="lnkEliminar1" class="btnEliminarImagenSelect" data-mini="true" data-inline="true" data-icon="delete" value="Eliminar" data-theme="b"/>
+                            </div>
+                        </div>
+                        <div class="imagenes_add">
+                            <div data-role="button" class="image_add_select" data-theme="d" data-icon="plus">Más imágenes</div>
+                        </div>
+                    </fieldset>   
+                    
+                </div>
+                   
+                <div id="datos-ubicacion-content" style="display: none;"> 
+                  <div data-role="fieldcontain">
+                       <label for="countryId">País</label>
+                       <select name="countryId" id="countryId" data-mini="true" data-native-menu="false">
+                           <option value="-1">Seleccione</option>   
+                       </select>    
+		    </div>  
+                  <div data-role="fieldcontain">
+                       <label for="regionId">Región</label>
+                       <select name="regionId" id="regionId" data-mini="true" data-native-menu="false">
+                           <option value="-1">Seleccione</option>
+                       </select>    
+		  </div>  
+                  <div data-role="fieldcontain">
+                      <label for="cityId">Ciudad</label>
+                      <select name="cityId" id="cityId" data-mini="true" data-native-menu="false">
+                          <option value="-1">Seleccione</option>
+                      </select>    
+		  </div>
+                    <div data-role="fieldcontain">
+                        <label for="title">Area de la ciudad:</label>
+                        <input type="text" name="cityArea" id="cityArea" value="" data-mini="true" />
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label for="title">Dirección:</label>
+                        <input type="text" name="address" id="address" value="" data-mini="true" />
+                    </div>
+                </div>    
+                 
+                  
+                <div id="meta_fields_content" style="display: none;"> 
+                  
+                </div>     
+                    
+
+		<div class="ui-body ui-body-b" id="option_node_edit">
+                    <fieldset class="ui-grid-a">
+                        <div class="ui-block-a"><button id="osclasgap_page_node_edit_submit" type="submit" data-theme="a" data-mini="true">Guardar</button></div>
+                        <div class="ui-block-b"><a href="javascript:history.back(1)" data-role="button" data-theme="d" data-mini="true" class="ui-btn-right" style="width: 90%;">Cancelar</a></div>
+                    </fieldset>
+		</div>
+	</form>
+	</div>	
+  </div><!-- /content -->
+  <div data-role="footer" data-position="fixed" class="ui-bar">
+        <a href="#" data-role="button" data-icon="arrow-u" id="up-edit-button">Subir</a>	
+        <a href="#" data-role="button" data-icon="arrow-d" id="down-edit-button">Bajar</a>	
+  </div>
+</div><!-- /page -->

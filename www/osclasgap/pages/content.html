@@ -1,0 +1,38 @@
+<div data-role="page" id="osclasgap_page_content">
+  <div data-role="header">
+  	<a href="dashboard.html" data-icon="home" class="ui-btn-left">Inicio</a>
+    <h1>Anuncios</h1>
+    <a href="javascript:history.back(1)" data-role='button' class="ui-btn-right" data-icon="back">Atrás</a>
+  </div><!-- /header -->
+  <div data-role="content">
+        <div data-role="fieldcontain">
+           
+           <!--<input type="search" name="search-mini" id="search-mini" value="" data-mini="true" />
+           <br>-->
+           <div id="filtro-content" data-role="controlgroup" data-type="horizontal" data-mini="true">
+                <a href="#" id="all-items" data-role="button" data-icon="search">Todos</a>
+                <label for="catId-content">Categoría</label>
+                <select name="catId-content" id="catId-content" data-mini="true" data-native-menu="false">
+                    <option value="-1">Por categoría</option>
+                </select> 
+                <label for="countryId-content">País</label>
+                <select name="countryId-content" id="countryId-content" data-mini="true" data-native-menu="false">
+                    <option value="-1">Por país</option>   
+                </select>
+                <a href="search.html" id="edit_search" data-role="button" data-icon="search" data-iconpos="right">+</a>
+            </div>
+           
+            <div id="filtro-values"> </div>
+         
+        </div>
+  	<ul data-role="listview" data-theme="a" data-inset="true" id="osclasgap_page_content_list"></ul>
+                   
+	  	<a href="#" data-role='button' id='more_items' style='display: none;'>Más Anuncios</a>
+                <div id="bar-button-option"></div>
+  </div><!-- /content -->
+  <div data-role="footer" class="ui-bar" data-position="fixed">
+        <a href="#" data-role="button" data-icon="arrow-u" id="up-button" >Subir</a>
+        <a href="#" data-role="button" data-icon="arrow-d" id="down-button">Bajar</a>	
+	<a href="node_edit.html" class="add_item" data-role="button" data-icon="plus" style="display: none;" id="osclasgap_page_content_button_add_footer">Adicionar</a>	
+  </div>
+</div><!-- /page -->
