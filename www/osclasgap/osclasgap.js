@@ -50,7 +50,7 @@ function osclasgap_settings_load () {
 	osclasgap_settings = window.localStorage.getItem("osclasgap_settings");
 	if (!osclasgap_settings) { // no settings found in local storage, setup defaults...
 		osclasgap_settings = {};
-		osclasgap_settings.site_path = "http://192.168.245.1/osclass"; // examples: http://my-osclas-site.com, http://10.0.2.2/my-localhost-osclas
+		osclasgap_settings.site_path = "http://ossdemo.tk"; // examples: http://my-osclas-site.com, http://10.0.2.2/my-localhost-osclas
 		osclasgap_settings.base_path = "/?q=";
 		osclasgap_settings.services_endpoint_default = "osclasgap";
 		osclasgap_settings.demo = false;
